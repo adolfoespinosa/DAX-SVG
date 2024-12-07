@@ -1,0 +1,9 @@
+Icon = 
+VAR Data_URL = "data:image/svg+xml;utf8, "
+VAR SVG_Start = " <svg xmlns='http://www.w3.org/2000/svg' viewBox='1 -1 10 10' height='8' width='8'> "
+VAR Circle = " <circle cx='5' cy='5' r='4' fill='#F3B244'>"
+VAR Animation = " <animate attributeName='fill-opacity' from='1' to='0.1' dur='2s' repeatCount='indefinite' /> "
+VAR SVG_Circle = " </circle> "
+VAR SVG_End = " </svg> "
+VAR Icon = Data_URL & SVG_Start & Circle & Animation & SVG_Circle & SVG_End
+RETURN Icon 
