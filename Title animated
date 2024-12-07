@@ -1,0 +1,10 @@
+Title = 
+VAR Data_URL = "data:image/svg+xml;utf8, "
+VAR SVG_Start = " <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 40' height='40' width='200'> "
+VAR Animation = " <animate attributeName='fill-opacity' from='1' to='0.1' dur='2s' repeatCount='indefinite' /> "
+VAR Animated_Text = " <text x='0' y='35' font-size='40' fill='#F3B244' font-family='Segoe UI Semibold' fill-opacity='1'>" & 
+                     "TEXT HERE" & Animation & "</text> "
+VAR SVG_End = " </svg> "
+VAR Title = Data_URL & SVG_Start & Animated_Text & SVG_End
+RETURN
+Title
